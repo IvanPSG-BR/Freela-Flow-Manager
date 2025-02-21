@@ -1,0 +1,30 @@
+{
+  "name": "freela-flow-manager",
+  "version": "1.0.0",
+  "description": "![Freela_Flow_Manager_minimalist_removed-bg](https://github.com/user-attachments/assets/76fbfecc-7bac-4c69-94dd-8eb9239c1b6c)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./public/assets/css/style.css -o ./public/assets/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanPSG-BR/Freela-Flow-Manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanPSG-BR/Freela-Flow-Manager/issues"
+  },
+  "homepage": "https://github.com/IvanPSG-BR/Freela-Flow-Manager#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.7",
+    "@tailwindcss/vite": "^4.0.7"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.0.7"
+  }
+}
