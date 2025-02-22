@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 
 body {
     font-family: "Outfit", serif;
@@ -6,5 +7,7 @@ body {
 }
 
 .website_name {
-    font-size: 1.6rem;
+    font-family: "Teko", serif;
+    font-size: 1.8rem;
+    padding: 0.2rem;
 }

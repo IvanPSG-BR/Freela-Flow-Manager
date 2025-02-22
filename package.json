@@ -22,7 +22,8 @@
   "homepage": "https://github.com/IvanPSG-BR/Freela-Flow-Manager#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.7",
-    "@tailwindcss/vite": "^4.0.7"
+    "@tailwindcss/vite": "^4.0.7",
+    "@vercel/speed-insights": "^1.2.0"
   },
   "devDependencies": {
     "tailwindcss": "^4.0.7"

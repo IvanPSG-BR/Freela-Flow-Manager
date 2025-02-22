@@ -14,11 +14,11 @@
         <header>
             <nav>
                 <section class="navbar_website_logoname">
-
-                    <h1 class="website_name inline">Freela </h1>
-                    <img src="./assets/media/global/Freela_Flow_Manager_minimalist_removed_bg.png" alt="FFM Icon" class="logo inline">
-                    <h1 class="website_name inline">Manager</h1>
-
+                    <a href="../public/index.php">
+                        <h1 class="website_name inline">Freela </h1>
+                        <img src="./assets/media/global/Freela_Flow_Manager_minimalist_removed_bg.png" alt="FFM Icon" class="logo inline">
+                        <h1 class="website_name inline">Manager</h1>
+                    </a>
                 </section>
             </nav>
         </header>
