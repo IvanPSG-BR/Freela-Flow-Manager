@@ -12,7 +12,15 @@
 
     <body>
         <header>
-            <img src="./assets/media/global/Freela_Flow_Manager_minimalist_removed_bg.png" alt="FFM Icon"><h1>FFM</h1>
+            <nav>
+                <section class="navbar_website_logoname">
+
+                    <h1 class="website_name inline">Freela </h1>
+                    <img src="./assets/media/global/Freela_Flow_Manager_minimalist_removed_bg.png" alt="FFM Icon" class="logo inline">
+                    <h1 class="website_name inline">Manager</h1>
+
+                </section>
+            </nav>
         </header>
         
         <main>

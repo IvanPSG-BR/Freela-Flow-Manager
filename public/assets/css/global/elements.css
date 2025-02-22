@@ -1,0 +1,13 @@
+body {
+    background-color:mintcream; /*Opções de cor de fundo: #ddede4, honeydew, mintcream*/
+}
+
+.logo {
+    width: 5rem;
+    border-radius: 1rem
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
