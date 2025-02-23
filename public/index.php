@@ -11,10 +11,12 @@
     </head>
 
     <body>
+        <div id="app"></div>
+        
         <header>
             <nav>
                 <section class="navbar_website_logoname">
-                    <a href="../public/index.php">
+                    <a href="/">
                         <h1 class="website_name inline">Freela </h1>
                         <img src="./assets/media/global/Freela_Flow_Manager_minimalist_removed_bg.png" alt="FFM Icon" class="logo inline">
                         <h1 class="website_name inline">Manager</h1>
@@ -30,5 +32,7 @@
         <footer>
 
         </footer>
+
+        <script src="/dist/bundle.js"></script>
     </body>
 </html>
