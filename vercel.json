@@ -1,12 +1,17 @@
 {
   "version": 2,
   "public": true,
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/api/public/(.*)", "dest": "/api/public/$1" },
-    { "src": "/(.*)", "dest": "/api/index.php" }
+  "rewrites": [
+    { "source": "/api/public/(.*)", "destination": "/api/public/$1" },
+    { "source": "/(.*)", "destination": "/api/index.php" }
   ],
   "functions": {
+    "api/public/js/main.js": {
+      "runtime": "@vercel/node",
+      "config": {
+        "distDir": "api/public/dist"
+      }
+    },
     "api/*.php": {
       "runtime": "vercel-php@0.7.3"
     }
