@@ -27,7 +27,6 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.0.7",
     "@tailwindcss/vite": "^4.0.7",
-    "@vercel/node": "^2.3.0",
     "vue": "^3.2.13",
     "vue-cli-service": "^5.0.10"
   },
