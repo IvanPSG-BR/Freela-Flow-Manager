@@ -7,8 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./public/assets/css/style.css -o ./public/assets/css/output.css --watch",
-    "build": "vue-cli-service build"
+    "dev": "webpack serve --mode development --port $PORT",
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "repository": {
     "type": "git",
