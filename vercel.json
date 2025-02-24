@@ -1,9 +1,8 @@
 {
   "version": 2,
-  "public": true,
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.php" }
+    { "src": "/(.*)", "dest": "/api/index.php" }
   ],
   "functions": {
     "api/*.php": {
