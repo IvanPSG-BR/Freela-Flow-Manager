@@ -1,16 +1,15 @@
 {
-  "public": true,
   "version": 2,
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.php" },
-    { "src": "/assets/(.*)", "dest": "/public/assets/$1" },
-    { "src": "/dist/(.*)", "dest": "/dist/$1" },
-    { "src": "/api/(.*)", "dest": "/api/$1" }
+    { "src": "/(.*)", "dest": "/index.php" }
   ],
   "functions": {
     "api/*.php": {
       "runtime": "vercel-php@0.7.3"
     }
+  },
+  "static": {
+    "public": true
   }
 }

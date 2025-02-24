@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "webpack serve --mode development --port $PORT",
+    "dev": "webpack serve --mode development --port 8080",
     "build": "webpack --config webpack.config.js --mode production"
   },
   "repository": {
