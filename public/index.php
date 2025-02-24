@@ -48,6 +48,6 @@
         </footer>
 
         <!-- Importação do arquivo JavaScript compilado pelo Webpack -->
-        <script src="/dist/bundle.js"></script>
+        <script src="../dist/bundle.js"></script>
     </body>
 </html>
