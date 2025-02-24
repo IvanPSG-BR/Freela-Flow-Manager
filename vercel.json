@@ -3,7 +3,7 @@
   "public": true,
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/public/(.*)", "dest": "/public/$1" },
+    { "src": "/api/public/(.*)", "dest": "/api/public/$1" },
     { "src": "/(.*)", "dest": "/api/index.php" }
   ],
   "functions": {
