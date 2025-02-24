@@ -1,7 +1,6 @@
 {
   "version": 2,
   "public": true,
-  "outputDirectory": "api/public/dist",
   "rewrites": [
     { "source": "/api/public/(.*)", "destination": "/api/public/$1" },
     { "source": "/(.*)", "destination": "/api/index.php" }
