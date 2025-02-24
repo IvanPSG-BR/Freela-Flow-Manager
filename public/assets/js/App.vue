@@ -1,15 +1,13 @@
 <template>
-
+  <!-- Template do componente principal -->
 </template>
 
 <script>
 export default {
-name: 'App',
+  name: 'App', // Nome do componente
 };
 </script>
 
 <style>
-h1 {
-color: blue;
-}
+
 </style>

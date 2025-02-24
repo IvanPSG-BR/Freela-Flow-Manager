@@ -1,7 +1,6 @@
 // Arquivo Principal JavaScript
-import { injectSpeedInsights } from '@vercel/speed-insights';
 import { createApp } from 'vue';
 import App from '/public/assets/js/App.vue';
 
-injectSpeedInsights();
+// Cria e monta a aplicação Vue no elemento com id 'app'
 createApp(App).mount('#app');
