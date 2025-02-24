@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production', // Modo de compilação: 'production' ou 'development'
-  entry: './public/assets/js/main.js', // Arquivo de entrada principal
+  entry: './public/js/main.js', // Arquivo de entrada principal
   output: {
     path: path.resolve(__dirname, 'dist'), // Diretório de saída
     filename: 'bundle.js', // Nome do arquivo de saída
@@ -40,7 +40,7 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(), // Plugin para processar arquivos .vue
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'public/index.php'), // Template HTML
+      template: path.resolve(__dirname, 'src/views/home/home.php'), // Template HTML
     }),
   ],
   resolve: {
