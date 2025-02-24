@@ -7,7 +7,6 @@
         <meta name="description" content="Plataforma completa para freelancers e autônomos, unindo o gerenciamento do tempo e a administração do dinheiro em um só lugar.">
 
         <!-- Importação de arquivos CSS -->
-        <link rel="stylesheet" href="/public/css/output.css">
         <link rel="stylesheet" href="/public/css/style.css">
         <link rel="stylesheet" href="/public/css/pages/home/home.css">
         

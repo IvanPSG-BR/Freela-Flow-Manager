@@ -1,5 +1,5 @@
 /* Estilos CSS*/
-@import "tailwindcss";
-@import "/api/public/css/global/elements.css";
-@import "/api/public/css/global/fonts.css";
-@import "/api/public/css/global/normalize.css"
+@import "./output.css";
+@import "./global/elements.css";
+@import "./global/fonts.css";
+@import "./global/normalize.css"

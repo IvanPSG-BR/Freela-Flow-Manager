@@ -6,11 +6,11 @@ module.exports = {
   mode: 'production', // Modo de compilação: 'production' ou 'development'
   entry: './api/public/js/main.js', // Arquivo de entrada principal
   output: {
-    path: path.resolve(__dirname, 'dist'), // Diretório de saída
+    path: path.resolve(__dirname, 'api/public/dist'), // Diretório de saída
     filename: 'bundle.js', // Nome do arquivo de saída
   },
   devServer: {
-    static: path.resolve(__dirname, 'dist'), // Diretório estático para o servidor de desenvolvimento
+    static: path.resolve(__dirname, 'api/public/dist'), // Diretório estático para o servidor de desenvolvimento
     compress: true, // Habilita compressão gzip
     port: 8080, // Porta onde o servidor será executado
     hot: true, // Habilita Hot Module Replacement
