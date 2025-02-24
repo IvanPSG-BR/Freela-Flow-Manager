@@ -2,4 +2,5 @@
 @import "./output.css";
 @import "./global/elements.css";
 @import "./global/fonts.css";
-@import "./global/normalize.css"
+@import "./global/normalize.css";
+@import "./pages/home/home.css";

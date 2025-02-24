@@ -1,13 +1,17 @@
 {
-  "version": 2,
-  "public": true,
-  "rewrites": [
-    { "source": "/api/public/(.*)", "destination": "/api/public/$1" },
-    { "source": "/(.*)", "destination": "/api/index.php" }
-  ],
   "functions": {
     "api/*.php": {
       "runtime": "vercel-php@0.7.3"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ]
 }

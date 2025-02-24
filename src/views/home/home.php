@@ -8,7 +8,6 @@
 
         <!-- Importação de arquivos CSS -->
         <link rel="stylesheet" href="/public/css/style.css">
-        <link rel="stylesheet" href="/public/css/pages/home/home.css">
         
         <!-- Título da página -->
         <title>Freela Flow Manager</title>
@@ -44,6 +43,6 @@
         </footer>
 
         <!-- Importação do arquivo JavaScript compilado pelo Webpack -->
-        <script src="/api/public/dist/bundle.js"></script>
+        <script src="/public/dist/bundle.js"></script>
     </body>
 </html>
