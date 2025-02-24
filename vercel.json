@@ -7,7 +7,7 @@
   ],
   "functions": {
     "api/public/js/main.js": {
-      "runtime": "@vercel/node"
+      "runtime": "@vercel/node@2.3.0"
     },
     "api/*.php": {
       "runtime": "vercel-php@0.7.3"
