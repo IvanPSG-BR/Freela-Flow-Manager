@@ -7,7 +7,7 @@
         <meta name="description" content="Plataforma completa para freelancers e autônomos, unindo o gerenciamento do tempo e a administração do dinheiro em um só lugar.">
 
         <!-- Importação de arquivos CSS -->
-        <link rel="stylesheet" href="/public/css/style.css">
+        <link rel="stylesheet" href="public/css/style.css">
         
         <!-- Título da página -->
         <title>Freela Flow Manager</title>
@@ -25,7 +25,7 @@
                     <a href="/">
                         <!-- Nome do site e logo -->
                         <h1 class="website_name inline">Freela </h1>
-                        <img src="/public/media/global/freela_flow_manager_minimalist_removed_bg.png" alt="FFM Icon" class="logo inline">
+                        <img src="public/media/global/freela_flow_manager_minimalist_removed_bg.png" alt="FFM Icon" class="logo inline">
                         <h1 class="website_name inline">Manager</h1>
                     </a>
                 </section>
