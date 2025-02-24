@@ -7,10 +7,7 @@
   ],
   "functions": {
     "api/public/js/main.js": {
-      "runtime": "@vercel/node",
-      "config": {
-        "distDir": "api/public/dist"
-      }
+      "runtime": "@vercel/node"
     },
     "api/*.php": {
       "runtime": "vercel-php@0.7.3"
