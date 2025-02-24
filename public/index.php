@@ -7,7 +7,7 @@
         <meta name="description" content="Plataforma completa para freelancers e autônomos, unindo o gerenciamento do tempo e a administração do dinheiro em um só lugar.">
 
         <!-- Caminho base -->
-        <base href="/">
+        <base href="./">
 
         <!-- Importação de arquivos CSS -->
         <link rel="stylesheet" href="assets/css/output.css">
@@ -48,6 +48,6 @@
         </footer>
 
         <!-- Importação do arquivo JavaScript compilado pelo Webpack -->
-        <script src="../dist/bundle.js"></script>
+        <script src="/dist/bundle.js"></script>
     </body>
 </html>
