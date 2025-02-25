@@ -1,4 +1,4 @@
-from ftplib import FTP
+from ftplib import FTP, error_perm
 import os
 from dotenv import load_dotenv
 
@@ -52,7 +52,7 @@ def upload_file(local_file, remote_filename):
 
 # Lista de diretórios e arquivos a serem ignorados
 ignore_dirs = {'node_modules', 'vendor', '.git', '.vscode'}
-ignore_files = {'.env', 'public/google2172dc8bcad3d5a6.html', 'package-lock.json', 'package.json', 'webpack.config.js'}  # pode incluir outros, se necessário
+ignore_files = {'.env', 'package-lock.json', 'package.json', 'webpack.config.js'}  # pode incluir outros, se necessário
 
 # Diretório base do projeto (pode ser alterado, se desejar)
 base_dir = os.getcwd()
