@@ -19,23 +19,32 @@ ftp.cwd(FTP_DIR)  # Mudar para o diretório correto
 
 def ensure_remote_dir(ftp_conn, remote_dir):
     """
-    Garante que o diretório remoto exista.
-    Navega pela árvore de diretórios, criando os que não existirem.
-    Após a criação, volta para o diretório original.
+    Garante que o diretório remoto exista, ignorando erros se ele já existir.
     """
     original_dir = ftp_conn.pwd()
+    
+    # Substituir \ por / (para evitar problemas no FTP)
+    remote_dir = remote_dir.replace("\\", "/")  
+
     for folder in remote_dir.split('/'):
-        if folder:  # ignora strings vazias
+        if folder:  # Ignorar strings vazias
             try:
                 ftp_conn.cwd(folder)
-            except Exception:
-                ftp_conn.mkd(folder)
-                ftp_conn.cwd(folder)
-    ftp_conn.cwd(original_dir)
+            except error_perm as e:
+                if "550" in str(e):  # Erro 550 significa que o diretório já pode existir
+                    pass
+                else:
+                    try:
+                        ftp_conn.mkd(folder)
+                        ftp_conn.cwd(folder)
+                    except error_perm as mkd_error:
+                        print(f"Erro ao criar diretório {folder}: {mkd_error}")
+    
+    ftp_conn.cwd(original_dir)  # Retorna ao diretório original
 
 def upload_file(local_file, remote_filename):
     """
-    Envia o arquivo local para o servidor FTP com o nome remote_filename.
+    Envia um arquivo local para o servidor FTP.
     """
     with open(local_file, "rb") as file_obj:
         ftp.storbinary(f"STOR {remote_filename}", file_obj)
@@ -49,30 +58,24 @@ ignore_files = {'.env', 'public/google2172dc8bcad3d5a6.html', 'package-lock.json
 base_dir = os.getcwd()
 
 for root, dirs, files in os.walk(base_dir):
-    # Remove os diretórios que não queremos percorrer
+    # Remover diretórios ignorados
     dirs[:] = [d for d in dirs if d not in ignore_dirs]
 
     for file in files:
-        # Ignora arquivos que estejam na lista ou que comecem com '.env'
         if file in ignore_files or file.startswith('.env'):
             continue
 
         local_path = os.path.join(root, file)
-        # Calcula o caminho relativo em relação ao diretório base
-        rel_path = os.path.relpath(local_path, base_dir)
+        rel_path = os.path.relpath(local_path, base_dir).replace("\\", "/")  # Ajusta separador
+
         remote_subdir = os.path.dirname(rel_path)
 
-        if remote_subdir and remote_subdir != '.':
-            # Garante que o diretório remoto exista
+        if remote_subdir and remote_subdir != ".":
             ensure_remote_dir(ftp, remote_subdir)
-            # Navega para o diretório remoto correspondente
             ftp.cwd(remote_subdir)
-            # Faz o upload do arquivo (usando somente o nome do arquivo)
-            upload_file(local_path, file)
-            # Volta para o diretório base remoto (FTP_DIR)
-            ftp.cwd(FTP_DIR)
+            upload_file(local_path, os.path.basename(rel_path))
+            ftp.cwd(FTP_DIR)  # Retornar para a pasta base
         else:
-            # Se o arquivo está na raiz, envia diretamente
             upload_file(local_path, file)
 
 ftp.quit()
