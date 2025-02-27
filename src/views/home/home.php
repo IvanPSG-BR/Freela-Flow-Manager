@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Plataforma completa para freelancers e autônomos, unindo o gerenciamento do tempo e a administração do dinheiro em um só lugar.">
 
+        <!-- Configurações e definição da URL base para os caminhos de importação -->
+        <?php require dirname(dirname(dirname(__DIR__))) . '/config/config.php'; ?>
+        <base href="<?php echo BASE_URL; ?>">
+
         <!-- Importação de arquivos CSS -->
         <link rel="stylesheet" href="public/css/style.css">
         
