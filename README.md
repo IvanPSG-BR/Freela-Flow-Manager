@@ -1,6 +1,6 @@
 # Freela-Flow-Manager
 
-![Freela_Flow_Manager_minimalist_removed-bg](./public/media/global/freela_flow_manager_minimalist_removed_bg.png)
+![Freela_Flow_Manager_minimalist_removed-bg](./public/media/global/favicon2.ico)
 
 ## 1. Descrição Geral
 

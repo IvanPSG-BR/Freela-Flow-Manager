@@ -9,7 +9,8 @@
         <!-- Importação de arquivos CSS -->
         <link rel="stylesheet" href="public/css/style.css">
         
-        <!-- Título da página -->
+        <!-- Imagem e texto de título da página -->
+        <link rel="icon" href="public/media/global/favicon.ico" />
         <title>Freela Flow Manager</title>
     </head>
 
@@ -25,7 +26,7 @@
                     <a href="/">
                         <!-- Nome do site e logo -->
                         <h1 class="website_name inline">Freela </h1>
-                        <img src="public/media/global/freela_flow_manager_minimalist_removed_bg.png" alt="FFM Icon" class="logo inline">
+                        <img src="public/media/global/favicon2.ico" alt="FFM Icon" class="logo inline">
                         <h1 class="website_name inline">Manager</h1>
                     </a>
                 </section>
@@ -43,6 +44,6 @@
         </footer>
 
         <!-- Importação do arquivo JavaScript compilado pelo Webpack -->
-        <script src="/public/dist/bundle.js"></script>
+        <script src="/dist/bundle.js"></script>
     </body>
 </html>

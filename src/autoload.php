@@ -1,7 +1,8 @@
 <?php
 spl_autoload_register(function ($class) {
-    $file = __DIR__ . '/' . str_replace('\\', '/', $class) . '.php';
+    // Converte os namespaces em caminhos (assumindo que suas classes estão dentro de src/)
+    $file = BASE_PATH . '/src/' . str_replace('\\', '/', $class) . '.php';
     if (file_exists($file)) {
-        require $file;
+        require_once $file;
     }
 });
