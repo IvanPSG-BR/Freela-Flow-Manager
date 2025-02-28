@@ -1,6 +1,2 @@
-/* Estilos CSS*/
-@import "./output.css";
-@import "./global/elements.css";
-@import "./global/fonts.css";
-@import "./global/normalize.css";
-@import "./pages/home/home.css";
+/* Importação dos estilos CSS do Tailwind*/
+@import "tailwindcss";

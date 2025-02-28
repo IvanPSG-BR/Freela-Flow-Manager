@@ -11,7 +11,7 @@
         <base href="<?php echo BASE_URL; ?>">
 
         <!-- Importação de arquivos CSS -->
-        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="public/css/pages/home.css">
         
         <!-- Imagem e texto de título da página -->
         <link rel="icon" href="public/media/global/favicon.ico" />
@@ -25,15 +25,15 @@
         <!-- Cabeçalho da página -->
         <header>
             <nav>
-                <section class="navbar_website_logoname">
+                <div class="logo">
                     <!-- Link para a página inicial -->
                     <a href="/">
                         <!-- Nome do site e logo -->
                         <h1 class="website_name inline">Freela </h1>
-                        <img src="public/media/global/favicon2.ico" alt="FFM Icon" class="logo inline">
+                        <img src="public/media/global/favicon2.ico" alt="FFM Icon" class="website_icon inline">
                         <h1 class="website_name inline">Manager</h1>
                     </a>
-                </section>
+                </div>
             </nav>
         </header>
         

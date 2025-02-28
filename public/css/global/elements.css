@@ -2,7 +2,7 @@ body {
     background-color:mintcream; /*Opções de cor de fundo: #ddede4, honeydew, mintcream*/
 }
 
-.logo {
+.website_icon {
     width: 3.6rem;
     border-radius: 1rem;
 }
@@ -10,4 +10,10 @@ body {
 .inline {
     display: inline-block;
     vertical-align: middle;
+}
+
+/* Removendo a cor padrão azul dos links do cabeçalho */
+a {
+    color: inherit;
+    text-decoration: none;
 }

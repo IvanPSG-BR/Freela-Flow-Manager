@@ -11,7 +11,8 @@
   },
   "scripts": {
     "dev": "webpack serve --mode development --port 8080",
-    "build": "webpack --config webpack.config.js --mode production"
+    "build": "webpack --config webpack.config.js --mode production",
+    "tw": "npx @tailwindcss/cli -i ./public/css/style.css -o ./public/css/tailwind.css --watch"
   },
   "repository": {
     "type": "git",
