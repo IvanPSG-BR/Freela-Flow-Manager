@@ -1,5 +1,4 @@
 <?php
-// src/routes/api.php
 
 require BASE_PATH . '/src/controllers/api_controller.php';
 

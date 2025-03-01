@@ -11,7 +11,8 @@
         <base href="<?php echo BASE_URL; ?>">
 
         <!-- Importação de arquivos CSS -->
-        <link rel="stylesheet" href="public/css/pages/home.css">
+        <link rel="stylesheet" href="public/css/pages/home.css?v=<?php filemtime('public/css/pages/home.css'); ?>">
+        <link rel="stylesheet" href="public/css/tailwind.css?v=<?php filemtime('public/css/tailwind.css'); ?>">">
         
         <!-- Imagem e texto de título da página -->
         <link rel="icon" href="public/media/global/favicon.ico" />
@@ -24,15 +25,25 @@
         
         <!-- Cabeçalho da página -->
         <header>
-            <nav>
-                <div class="logo">
-                    <!-- Link para a página inicial -->
-                    <a href="/">
-                        <!-- Nome do site e logo -->
-                        <h1 class="website_name inline">Freela </h1>
+            <nav class="navbar flex justify-between">
+                <div class="logo content-center">
+                    <!-- Link para a página inicial (TROCAR href AO EXECUTAR auto_upl.py) -->
+                    <a href="/src/views/home/home.php"> <!-- Live Share: "/src/views/home/home.php" - Website: "/") -->
+                        <h1 class="website_name inline align-middle">Freela </h1>
                         <img src="public/media/global/favicon2.ico" alt="FFM Icon" class="website_icon inline">
-                        <h1 class="website_name inline">Manager</h1>
+                        <h1 class="website_name inline align-middle">Manager</h1>
                     </a>
+                </div>
+
+                <div class="page_options content-center">
+                    <a href="/?page=placeholder"><h2 class="page n1 inline">Opção 1</h2></a>
+                    <a href="/?page=placeholder"><h2 class="page n2 inline">Opção 2</h2></a>
+                    <a href="/?page=placeholder"><h2 class="page n3 inline">Opção 3</h2></a>
+                </div>
+
+                <div class="auth_options content-center">
+                    <a href="/?page=placeholder" class="signin_btn">Cadastrar</a>
+                    <a href="/?page=placeholder" class="login_btn">Entrar</a>
                 </div>
             </nav>
         </header>
@@ -48,6 +59,6 @@
         </footer>
 
         <!-- Importação do arquivo JavaScript compilado pelo Webpack -->
-        <script src="/dist/bundle.js"></script>
+        <script src="/dist/bundle.js?v=<?php filemtime('/dist/bundle.js'); ?>"></script>
     </body>
 </html>

@@ -1,3 +1,12 @@
+# ANTES DE EXECUTAR O SCRIPT:
+# - Verificar o caminho definido em config.php
+# - Revisar páginas modificadas e confirmar que os caminhos estão corretos
+# - Executar no terminal "npm run build" (sem aspas)
+# ============================================================================ #
+# DEPOIS DE EXECUTADO:
+# - Verificar o caminho definido em config.php novamente
+# - (Re)revisar páginas modificadas e confirmar que os caminhos estão corretos
+
 from ftplib import FTP, error_perm
 import os
 from dotenv import load_dotenv
@@ -84,7 +93,7 @@ ignore_files = {'.env', 'package-lock.json', 'package.json', 'webpack.config.js'
 # Lista de arquivos específicos para upload
 # Adicione ou remova arquivos conforme necessário
 # Exemplo: ['pasta/arquivo.php', 'index.html', 'css/estilo.css']
-arquivos_especificos = []
+arquivos_especificos = ['src/views/home/home.php', 'dist/index.html']
 
 def main():
     escolha = mostrar_menu()
