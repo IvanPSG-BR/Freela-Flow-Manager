@@ -28,6 +28,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.0.7",
     "@tailwindcss/vite": "^4.0.7",
+    "esbuild": "^0.25.0",
     "vue": "^3.2.13",
     "vue-cli-service": "^5.0.10"
   },
@@ -38,7 +39,7 @@
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
-    "tailwindcss": "^4.0.7",
+    "tailwindcss": "^4.0.9",
     "vue-cli-service": "^5.0.10",
     "vue-loader": "^17.4.2",
     "vue-style-loader": "^4.1.3",

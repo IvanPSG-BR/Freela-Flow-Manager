@@ -1,15 +1,3 @@
 body {
     background-color:mintcream; /*Opções de cor de fundo: #ddede4, honeydew, mintcream*/
 }
-
-/* Removendo a cor padrão azul dos links do cabeçalho */
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.website_icon {
-    width: 3.2rem;
-    height: auto;
-    border-radius: 1rem;
-}

@@ -11,12 +11,13 @@
         <base href="<?php echo BASE_URL; ?>">
 
         <!-- Importação de arquivos CSS -->
-        <link rel="stylesheet" href="public/css/pages/home.css?v=<?php filemtime('public/css/pages/home.css'); ?>">
-        <link rel="stylesheet" href="public/css/tailwind.css?v=<?php filemtime('public/css/tailwind.css'); ?>">">
+        <link rel="stylesheet" href="public/css/tailwind.css<?php //echo "?v=" . filemtime('public/css/tailwind.css'); ?>">         
+        <link rel="stylesheet" href="public/css/pages/home.css<?php //echo "?v=" . filemtime('public/css/pages/home.css'); ?>">
         
         <!-- Imagem e texto de título da página -->
         <link rel="icon" href="public/media/global/favicon.ico" />
         <title>Freela Flow Manager</title>
+        
     </head>
 
     <body>
@@ -24,28 +25,40 @@
         <div id="app"></div>
         
         <!-- Cabeçalho da página -->
-        <header>
-            <nav class="navbar flex justify-between">
-                <div class="logo content-center">
-                    <!-- Link para a página inicial (TROCAR href AO EXECUTAR auto_upl.py) -->
-                    <a href="/src/views/home/home.php"> <!-- Live Share: "/src/views/home/home.php" - Website: "/") -->
-                        <h1 class="website_name inline align-middle">Freela </h1>
-                        <img src="public/media/global/favicon2.ico" alt="FFM Icon" class="website_icon inline">
-                        <h1 class="website_name inline align-middle">Manager</h1>
-                    </a>
-                </div>
+        <header class="flex justify-between">
 
-                <div class="page_options content-center">
-                    <a href="/?page=placeholder"><h2 class="page n1 inline">Opção 1</h2></a>
-                    <a href="/?page=placeholder"><h2 class="page n2 inline">Opção 2</h2></a>
-                    <a href="/?page=placeholder"><h2 class="page n3 inline">Opção 3</h2></a>
-                </div>
+            <div class="logo flex place-items-center transition delay-100 duration-300 ease-initial hover:scale-110 hover:translate-1.5">
+                <!-- Link para a página inicial (TROCAR href AO EXECUTAR auto_upl.py) -->
+                <a href="/src/views/home/home.php"> <!-- Live Share: "/src/views/home/home.php" - Website: "/") -->
 
-                <div class="auth_options content-center">
-                    <a href="/?page=placeholder" class="signin_btn">Cadastrar</a>
-                    <a href="/?page=placeholder" class="login_btn">Entrar</a>
-                </div>
+                    <h1 class="website_name p-1 inline align-middle">
+                        Freela 
+                        <img src="public/media/global/favicon2.ico" alt="FFM Icon" class="website_icon w-13 h-auto p-1 inline"> 
+                        Manager
+                    </h1>
+
+                </a>
+
+            </div>
+
+            <nav class="navbar flex place-items-center">
+
+                <a href="/?page=placeholder"><h2 class="page1 px-3 flex transition delay-100 duration-300 ease-initial hover:scale-110 hover:translate-y-1.5">Opção 1</h2></a>
+
+                <a href="/?page=placeholder"><h2 class="page2 px-3 flex transition delay-100 duration-300 ease-initial hover:scale-110 hover:translate-y-1.5">Opção 2</h2></a>
+
+                <a href="/?page=placeholder"><h2 class="page3 px-3 flex transition delay-100 duration-300 ease-initial hover:scale-110 hover:translate-y-1.5">Opção 3</h2></a>
+
             </nav>
+
+            <div class="auth_options flex place-items-center">
+
+                <a href="/?page=placeholder" class="signin_btn px-2 flex transition delay-100 duration-300 ease-initial hover:scale-110 hover:-translate-x-1.5 hover:translate-y-1.5">Cadastrar</a>
+
+                <a href="/?page=placeholder" class="login_btn px-2 flex transition delay-100 duration-300 ease-initial hover:scale-110 hover:-translate-x-1.5 hover:translate-y-1.5">Entrar</a>
+
+            </div>
+
         </header>
         
         <!-- Conteúdo principal da página -->
@@ -59,6 +72,7 @@
         </footer>
 
         <!-- Importação do arquivo JavaScript compilado pelo Webpack -->
-        <script src="/dist/bundle.js?v=<?php filemtime('/dist/bundle.js'); ?>"></script>
+        <script src="/dist/bundle.js<?php //echo "?v=" . filemtime('/dist/bundle.js'); ?>"></script>
+
     </body>
 </html>
